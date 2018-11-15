@@ -157,7 +157,7 @@ def Get_Words(filename):
 def main():
 
     start_time = time.time()  
-    table = Get_Words("glove.6B.50d.txt")
+    table = Get_Words("glove6Btxt") # the name in the quatation marks is the name of the file that while be used to get the words from
     print("--- %s seconds ---" % (time.time() - start_time))
     temp = average_distrubution_true(table)
     print(str(temp) + " is the average distribution")
